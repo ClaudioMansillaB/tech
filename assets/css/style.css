@@ -13,11 +13,11 @@ html, body {
 }
 
 .video-container {
-    width: 150%;
+    width: 70%;
 }
 
 video {
-    width: 100%;
+    width: 140%;
     height: auto;
 }
 #pdf-gallery {
@@ -69,15 +69,3 @@ iframe {
     text-align: center;
   }
 
-  #container {
-    display:         flex;
-    flex-wrap:       wrap;
-    justify-content: center;
-  }
-  
-  .block {
-    width:              150px;
-    height:             150px;
-    background-color:   #cccccc;
-    margin:             10px;        
-  }

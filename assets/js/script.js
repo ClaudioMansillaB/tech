@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     /************************************/
-    const videoSources = ['data/videos/penguins.mp4'];
+    const videoSources = ['data/videos/myvideo.mp4'];
     const gallery = document.getElementById('video-gallery');
 
     videoSources.forEach(videoSrc => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /************************************/
     const pdfSources = [
-        'data/pdfs/CV_ClaudioMansillaBr__EN_.pdf', 
+        'data/pdfs/mypdf.pdf', 
     ];
 
     const pdfGallery = document.getElementById('pdf-gallery');

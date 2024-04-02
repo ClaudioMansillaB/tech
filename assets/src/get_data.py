@@ -22,7 +22,7 @@ def extract_video_frames(video_path: str,video_source: str, hops=30):
 def extraer_caracteristicas_audio(audio_path: str,audio_source: str):
     y, sr = librosa.load(audio_source)
     mfcc = librosa.feature.mfcc(y=y, sr=sr)
-    nombre_archivo = os.path.basename(audio_source).split('.')[0]  # Obtiene el nombre sin la extensión
+    nombre_archivo = os.path.basename(audio_source).split('.')[0] 
     ruta_caracteristicas = os.path.join(audio_path, f"{nombre_archivo}_mfcc.npy")
     np.save(ruta_caracteristicas, mfcc)
 
