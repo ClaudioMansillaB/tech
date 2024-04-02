@@ -25,16 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const iframe = document.createElement('iframe');
         iframe.src = pdfSrc;
         iframe.style.width = '180%';
-        iframe.style.height = '500px';
+        iframe.style.height = '300px';
         pdfContainer.appendChild(iframe);
         pdfGallery.appendChild(pdfContainer);
     });
     /************************************/
 
     const audioSources = [
-        'data/audios/01.mp3', 'data/audios/02.mp3', 'data/audios/03.mp3'
+        'data/audio/onrepeat.mp3',
     ];
-
     const audioGallery = document.getElementById('audio-gallery');
     audioSources.forEach(audioSrc => {
         const audioContainer = document.createElement('div');
