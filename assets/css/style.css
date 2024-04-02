@@ -40,6 +40,9 @@ iframe {
     padding: 20px;
 }
 
+.audio-container {
+    width: 30%;
+}
 
 audio {
     width: 100%;

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    /************************************/
     const videoSources = ['data/videos/penguins.mp4'];
     const gallery = document.getElementById('video-gallery');
 
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gallery.appendChild(videoContainer);
     });
 
+    /************************************/
     const pdfSources = [
         'data/pdfs/CV_ClaudioMansillaBr__EN_.pdf', 
     ];
@@ -26,5 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
         iframe.style.height = '500px';
         pdfContainer.appendChild(iframe);
         pdfGallery.appendChild(pdfContainer);
+    });
+    /************************************/
+
+    const audioSources = [
+        'data/audios/01.mp3', 'data/audios/02.mp3', 'data/audios/03.mp3'
+    ];
+
+    const audioGallery = document.getElementById('audio-gallery');
+    audioSources.forEach(audioSrc => {
+        const audioContainer = document.createElement('div');
+        audioContainer.classList.add('audio-container');
+        const audio = document.createElement('audio');
+        audio.src = audioSrc;
+        audio.controls = true;
+        audioContainer.appendChild(audio);
+        audioGallery.appendChild(audioContainer);
     });
 });

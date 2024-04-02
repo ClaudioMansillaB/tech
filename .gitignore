@@ -1,5 +1,6 @@
 *.env
 *.mp4
 *.pdf
+*.mp3
 __pycache__/
 .ipynb_checkpoints/
