@@ -1,3 +1,9 @@
+html, body {
+    margin: 0px;
+    background-color: #2F4F30;
+    color: white;
+}
+
 #video-gallery {
     display: flex;
     position: relative;
@@ -32,19 +38,33 @@ iframe {
     height: auto;
 }
 
-#audio-gallery {
+.audio-gallery {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #161515;
+}
+
+.audio-item {
+    padding: 8px;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.audio-item:last-child {
+    border-bottom: none;
+}
+
+.audio-item:hover {
+    background-color: #565353;
+}
+
+.center-screen {
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-}
-
-.audio-container {
-    width: 30%;
-}
-
-audio {
-    width: 100%;
-    height: auto;
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

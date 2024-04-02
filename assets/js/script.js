@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     /************************************/
-    const videoSources = ['data/videos/penguins.mp4'];
+    const videoSources = ['data/videos/myvideo.mp4'];
     const gallery = document.getElementById('video-gallery');
 
     videoSources.forEach(videoSrc => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /************************************/
     const pdfSources = [
-        'data/pdfs/CV_ClaudioMansillaBr__EN_.pdf', 
+        'data/pdfs/mypdf.pdf', 
     ];
 
     const pdfGallery = document.getElementById('pdf-gallery');
@@ -24,24 +24,24 @@ document.addEventListener('DOMContentLoaded', function() {
         pdfContainer.classList.add('pdf-container');
         const iframe = document.createElement('iframe');
         iframe.src = pdfSrc;
-        iframe.style.width = '180%';
+        iframe.style.width = '100%';
         iframe.style.height = '300px';
         pdfContainer.appendChild(iframe);
         pdfGallery.appendChild(pdfContainer);
     });
     /************************************/
 
-    const audioSources = [
-        'data/audio/onrepeat.mp3',
-    ];
-    const audioGallery = document.getElementById('audio-gallery');
-    audioSources.forEach(audioSrc => {
-        const audioContainer = document.createElement('div');
-        audioContainer.classList.add('audio-container');
-        const audio = document.createElement('audio');
-        audio.src = audioSrc;
-        audio.controls = true;
-        audioContainer.appendChild(audio);
-        audioGallery.appendChild(audioContainer);
+    const audioNames = ['Jazz in Paris', 'Moonlight Sonata', 'New York Mood'];
+    const container = document.getElementById('audio-gallery');
+
+    audioNames.forEach(name => {
+        const div = document.createElement('div');
+        div.classList.add('audio-item');
+        div.textContent = name;
+        div.addEventListener('click', function() {
+            console.log(`You clicked on: ${name}`); 
+
+        });
+        container.appendChild(div);
     });
 });
