@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     /************************************/
-    const videoSources = ['data/videos/myvideo.mp4'];
+    const videoSources = ['data/videos/penguins.mp4'];
     const gallery = document.getElementById('video-gallery');
 
     videoSources.forEach(videoSrc => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /************************************/
     const pdfSources = [
-        'data/pdfs/mypdf.pdf', 
+        'data/pdfs/CV_ClaudioMansillaBr__EN_.pdf', 
     ];
 
     const pdfGallery = document.getElementById('pdf-gallery');
@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
         pdfContainer.classList.add('pdf-container');
         const iframe = document.createElement('iframe');
         iframe.src = pdfSrc;
-        iframe.style.width = '100%';
-        iframe.style.height = '300px';
+        iframe.style.width = '180%';
+        iframe.style.height = '390px';
         pdfContainer.appendChild(iframe);
         pdfGallery.appendChild(pdfContainer);
     });
     /************************************/
 
-    const audioNames = ['Jazz in Paris', 'Moonlight Sonata', 'New York Mood'];
+    const audioNames = ['Jazz in Paris', 'Moonlight Sonata', 'New York Mood','New Song'];
     const container = document.getElementById('audio-gallery');
 
     audioNames.forEach(name => {

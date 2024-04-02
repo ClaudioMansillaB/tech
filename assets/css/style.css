@@ -13,7 +13,7 @@ html, body {
 }
 
 .video-container {
-    width: 30%;
+    width: 150%;
 }
 
 video {
@@ -67,4 +67,17 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  #container {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+  }
+  
+  .block {
+    width:              150px;
+    height:             150px;
+    background-color:   #cccccc;
+    margin:             10px;        
   }
