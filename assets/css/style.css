@@ -1,5 +1,6 @@
 #video-gallery {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
@@ -10,6 +11,37 @@
 }
 
 video {
+    width: 100%;
+    height: auto;
+}
+#pdf-gallery {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.pdf-container img {
+    width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+#audio-gallery {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+audio {
     width: 100%;
     height: auto;
 }
